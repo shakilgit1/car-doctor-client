@@ -7,6 +7,7 @@ import Register from '../Pages/Register/Register';
 import BookService from '../Pages/Home/BookService';
 import Bookings from '../Pages/Bookings';
 import PrivetRoute from '../Pages/PrivetRoute';
+import About from '../Pages/Home/About';
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         {
         path: '/',
         element: <Home></Home>
+        },
+        {
+          path: '/about',
+          element: <About></About>
         },
         {
         path: '/login',

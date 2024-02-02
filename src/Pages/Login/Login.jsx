@@ -3,6 +3,7 @@ import img from '../../assets/images/login/login.svg';
 // import { useContext } from 'react';
 // import { AuthContext } from '../../AuthProvider/AuthProvider';
 import useAuth from '../../hooks/useAuth';
+import ScrollToTop from '../../hooks/scrollToTop';
 // import axios from 'axios';
 
 const Login = () => {
@@ -40,7 +41,9 @@ const Login = () => {
 
 
   return (
-    <div className="hero min-h-screen">
+    <div>
+      <ScrollToTop></ScrollToTop>
+      <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
         <div className="w-1/2 mr-12">
           <img src={img}alt="" />
@@ -86,6 +89,7 @@ const Login = () => {
           <p className="text-center mb-4">New to here?<Link className='ml-2 text-orange-500 font-bold' to="/signup">Sign Up</Link></p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

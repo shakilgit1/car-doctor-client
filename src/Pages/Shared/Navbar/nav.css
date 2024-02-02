@@ -1,0 +1,15 @@
+/* #nav-active >.active >NavLink{
+    color: red;
+    font-size: xx-large;
+    background-color: aqua;
+} */
+/* navLink > li > .active {
+    color: red;
+    font-size: xx-large;
+    background-color: aqua;
+} */
+#sidebar a.active {
+    color: red;
+    font-weight: bold;
+    background-color: white;
+  }
